@@ -99,13 +99,16 @@ a {
 
 .container-2 {
     border: 2px solid #F54318;
+    height: 400px;
     background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .block-2 {
     width: 200px;
     height: 200px;
     background-color: rgba(117, 169, 247, 0.9);
-    margin: auto auto auto auto;
 }
 
 .container-3 {
