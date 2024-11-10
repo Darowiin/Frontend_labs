@@ -73,3 +73,26 @@ tbody tr:nth-child(even) {
 td, th {
     padding: 10px;
 }
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 10px 0px 10px;
+}
+
+form.form-example {
+    display: table;
+    margin-left: 4%;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label, input, select {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label, input {
+  padding-right: 10px;
+}
