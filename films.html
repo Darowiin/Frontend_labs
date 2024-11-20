@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="ru">
+">
 <head>
     <meta charset="UTF-8">
-    <title>Роберт Дауни младший - Фильмы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмы Роберта Дауни мл.</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Роберт Дауни мл.</a>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="info.html">Роберт Дауни мл.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -19,18 +20,203 @@
                         <a class="nav-link" href="info.html">Информация</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="films.html">Фильмы</a>
+                        <a class="nav-link active" href="films.html">Фильмы</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5 pt-5">
-        <div class="alert alert-info" role="alert">
-            Здесь скоро будет представлена полная информация обо всех фильмах Роберта Дауни младшего.
+    <div class="container mt-5">
+        <!-- Информация об актёре -->
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h2>Роберт Дауни младший</h2>
+                <ul>
+                    <li><strong>Дата рождения:</strong> 4 апреля 1965</li>
+                    <li><strong>Возраст:</strong> 59 лет</li>
+                    <li><strong>Количество фильмов:</strong> более 80</li>
+                    <li><strong>Жанры:</strong> боевик, драма, комедия, приключения</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="images/rdj.jpg" class="img-fluid rounded" alt="Роберт Дауни мл.">
+            </div>
+        </div>
+
+        <!-- Лучшие фильмы -->
+        <h2 class="mb-4">Лучшие фильмы</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/ironman.jpg" class="card-img-top" alt="Iron Man">
+                    <div class="card-body">
+                        <h5 class="card-title">Железный человек</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/avengers.jpg" class="card-img-top" alt="The Avengers">
+                    <div class="card-body">
+                        <h5 class="card-title">Мстители</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/sherlock.jpg" class="card-img-top" alt="Sherlock Holmes">
+                    <div class="card-body">
+                        <h5 class="card-title">Шерлок Холмс</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/judge.jpg" class="card-img-top" alt="Chaplin">
+                    <div class="card-body">
+                        <h5 class="card-title">Судья</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дополнительная информация -->
+        <h2 class="mt-5 mb-4">Интересные факты</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Оскары:</strong> Был номинирован на премию "Оскар" за роли в фильмах "Чаплин" и "Тропы".</p>
+                <p><strong>Любимое блюдо:</strong> Роберт обожает бургеры, что отражено в сценах из "Железного человека".</p>
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+                <img src="images/123.jpg" class="img-fluid rounded" alt="Интересные факты">
+            </div>
+        </div>
+
+        <!-- Фильмография -->
+        <h2 class="mt-5 mb-4">Фильмография</h2>
+        <div class="table-responsive">
+            <table class="table table-striped text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Год</th>
+                        <th>Русское название</th>
+                        <th>Оригинальное название</th>
+                        <th>Роль</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1985</td>
+                        <td>На тропе войны</td>
+                        <td>Tuff Turf</td>
+                        <td>Джеймс</td>
+                    </tr>
+                    <tr>
+                        <td>1987</td>
+                        <td>Меньше нуля</td>
+                        <td>Less Than Zero</td>
+                        <td>Джулиан Уэллс</td>
+                    </tr>
+                    <tr>
+                        <td>1992</td>
+                        <td>Чаплин</td>
+                        <td>Chaplin</td>
+                        <td>Чарли Чаплин</td>
+                    </tr>
+                    <tr>
+                        <td>1994</td>
+                        <td>Прирожденные убийцы</td>
+                        <td>Natural Born Killers</td>
+                        <td>Уэйн Гейл</td>
+                    </tr>
+                    <tr>
+                        <td>2000</td>
+                        <td>Чудо-бой</td>
+                        <td>Wonder Boys</td>
+                        <td>Терри Крабтри</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>Железный человек</td>
+                        <td>Iron Man</td>
+                        <td>Тони Старк</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>Солдаты неудачи</td>
+                        <td>Tropic Thunder</td>
+                        <td>Кирк Лазарус</td>
+                    </tr>
+                    <tr>
+                        <td>2009</td>
+                        <td>Шерлок Холмс</td>
+                        <td>Sherlock Holmes</td>
+                        <td>Шерлок Холмс</td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>Железный человек 2</td>
+                        <td>Iron Man 2</td>
+                        <td>Тони Старк</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>Мстители</td>
+                        <td>The Avengers</td>
+                        <td>Тони Старк</td>
+                    </tr>
+                    <tr>
+                        <td>2013</td>
+                        <td>Железный человек 3</td>
+                        <td>Iron Man 3</td>
+                        <td>Тони Старк</td>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>Судья</td>
+                        <td>The Judge</td>
+                        <td>Хэнк Палмер</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>Мстители: Эра Альтрона</td>
+                        <td>Avengers: Age of Ultron</td>
+                        <td>Тони Старк</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Первый мститель: Противостояние</td>
+                        <td>Captain America: Civil War</td>
+                        <td>Тони Старк</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>Мстители: Война бесконечности</td>
+                        <td>Avengers: Infinity War</td>
+                        <td>Тони Старк</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>Мстители: Финал</td>
+                        <td>Avengers: Endgame</td>
+                        <td>Тони Старк</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>Удивительное путешествие доктора Дулиттла</td>
+                        <td>Dolittle</td>
+                        <td>Доктор Дулиттл</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 bg-dark text-light">
+        <p>&copy; 2024 Фильмы Роберта Дауни мл.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

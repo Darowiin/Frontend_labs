@@ -1,4 +1,3 @@
-/* Общие настройки */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -13,20 +12,20 @@ h2 {
 }
 
 #sideMenu {
-    width: 20%; /* Устанавливаем фиксированную ширину */
+    width: 20%;
     height: 100vh;
-    position: fixed; /* Закрепляем меню сбоку */
+    position: fixed;
     padding-top: 60px;
     background-color: #343a40;
     color: #fff;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Добавляем прокрутку, если контента будет больше */
+    overflow-y: auto;
 }
 
 #sideMenu .nav-link {
     color: #adb5bd;
-    font-size: 1rem; /* Уменьшаем размер шрифта, чтобы смотрелось компактнее */
-    padding: 10px 15px; /* Уменьшаем внутренние отступы */
+    font-size: 1rem;
+    padding: 10px 15px;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
