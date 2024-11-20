@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Роберт Дауни младший - Информация</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#sideMenu" data-bs-offset="50">
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Роберт Дауни мл.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Информация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="films.html">Фильмы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!-- Боковое меню -->
+            <nav id="sideMenu" class="col-md-3 d-none d-md-block bg-light position-fixed">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#carouselSection">Карусель</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#filmsSection">Фильмы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bioSection">Биография</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Основной контент -->
+            <main class="col-md-9 offset-md-3">
+                <!-- Карусель -->
+                <section id="carouselSection" class="mt-5">
+                    <h2>Фотографии Роберта Дауни младшего</h2>
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/rdj1.jpg" class="d-block w-100" alt="Robert Downey Jr.">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/rdj2.jpg" class="d-block w-100" alt="Robert Downey Jr.">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/rdj3.jpg" class="d-block w-100" alt="Robert Downey Jr.">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Карточки с фильмами -->
+                <section id="filmsSection" class="mt-5">
+                    <h2>Знаменитые фильмы</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/ironman.jpg" class="card-img-top" alt="Iron Man">
+                                <div class="card-body">
+                                    <h5 class="card-title">Железный человек</h5>
+                                    <p class="card-text">Тони Старка, гениальный миллиардер, плейбой и филантроп.</p>
+                                    <a href="https://www.kinopoisk.ru/film/61237/" target="_blank" class="btn btn-primary">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/sherlock.jpg" class="card-img-top" alt="Sherlock Holmes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Шерлок Холмс</h5>
+                                    <p class="card-text">Величайший в истории сыщик Шерлок Холмс вместе со своим верным соратником Ватсоном.</p>
+                                    <a href="https://www.kinopoisk.ru/film/420923/" target="_blank" class="btn btn-primary">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/avengers.jpg" class="card-img-top" alt="Avengers">
+                                <div class="card-body">
+                                    <h5 class="card-title">Мстители</h5>
+                                    <p class="card-text">Супергеройский фильм, который объединил самых известных персонажей Marvel.</p>
+                                    <a href="https://www.kinopoisk.ru/film/263531/" target="_blank" class="btn btn-primary">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Биография -->
+                <section id="bioSection" class="mt-5">
+                    <h2>Краткая биография</h2>
+                    <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#bioText" aria-expanded="false" aria-controls="bioText">
+                        Показать биографию
+                    </button>
+                    <div class="collapse mt-3" id="bioText">
+                        <p>
+                            Роберт Дауни младший родился 4 апреля 1965 года в Нью-Йорке в семье режиссёра и актрисы. Его отец, Роберт Дауни старший, был известным режиссёром
+                            и актёром экспериментального кино, а мать, Элси Энн Форд, актрисой. С самого детства Роберт был окружён творческой атмосферой, и уже в пятилетнем возрасте он дебютировал в фильме своего отца "Загадка Палмера". 
+                        </p>
+                        <p>
+                            В юности Дауни столкнулся с серьёзными жизненными трудностями, связанными с зависимостью, которые на протяжении многих лет мешали его карьере. 
+                            Несмотря на это, он смог восстановить свою репутацию и вернуться в Голливуд, доказав свой талант. 
+                        </p>
+                        <p>
+                            Настоящий прорыв произошёл в 2008 году, когда он получил роль Тони Старка (Железного человека) в фильме студии Marvel. Эта роль не только превратила его в одного из самых высокооплачиваемых актёров Голливуда, 
+                            но и помогла ему стать символом франшизы Marvel. Сегодня Дауни считается одной из самых влиятельных персон в кинематографе, и его карьера насчитывает десятки культовых фильмов, таких как "Шерлок Холмс", "Солист" и "Чаплин".
+                        </p>
+                        <p>
+                            В личной жизни Роберт женат на Сьюзан Дауни, с которой у него двое детей. Дауни активно занимается благотворительностью, поддерживая проекты в сфере здравоохранения и экологии, а также продвигает устойчивое развитие через свои компании.
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
